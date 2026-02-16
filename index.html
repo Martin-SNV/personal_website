@@ -1,0 +1,217 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap">
+    <title>Martin Stubna</title>
+    <style>
+        html {font-family: "Silkscreen", sans-serif; scroll-behavior: smooth;}
+        body {margin: 0; min-height: 100vh; background: linear-gradient(to bottom, #0a0e0a 0%, #0a0e0a 25%,#063b18 55%, #0b7a2a 100%);}
+        h1   {color: #28c85a; font-size: 45px;}
+        h2   {color: #28c85a; font-size: 35px; margin: 0 0 12px 0;}
+        h3   {color: #28c85a; font-size: 25px; margin: 24px 0 12px 0;}
+        a, a:visited{color: rgb(255, 255, 255); text-decoration: none;}
+        p    {color: rgb(255, 255, 255); font-size: 18px; text-align: justify; margin: 0 0 12px 0;}
+        section {padding: 40px 0;}
+    </style>
+
+    <style>
+        .centered{
+              text-align: center;
+        }
+        .container{
+            width: min(1000px, 92vw);      
+            margin: 24px auto;  
+            padding: 24px;   
+            border: 2px solid #28c85a;
+            background: rgba(10,14,10,0.6); 
+            box-sizing: border-box;
+        }
+    </style>
+
+    <style>
+        .link-box{
+            display: inline-block;         
+            padding: 16px 20px;
+            border: 2px solid #28c85a;
+            border-radius: 10px;
+            background: rgba(10, 14, 10, 0.6);
+            box-shadow: 0 0 12px rgba(40, 200, 90, 0.25);
+        }
+    </style>
+
+    <style>
+        .title{
+            display: flex;    
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;            
+        }
+        .spacer{
+            width: 100px;
+        }
+        .title_header{
+            flex: 1;    
+            min-width: 0;
+            text-align: center;
+        }
+        .title_gif{
+            max-width: 100%;
+            height: auto;
+        }
+        .title_photo{
+            max-width: 150px;
+            height: auto;
+        }
+        nav a:link, nav a:visited, nav a:hover, nav a:focus, nav a:active {color: #28c85a; text-decoration: none;}
+        nav  {color: #28c85a; font-size: 25px;}
+        nav{
+            display: flex;    
+            flex-direction: row;
+            flex-wrap: wrap;     
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <style>
+        .photo-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .images{
+            width: 100%; 
+            height: 220px; 
+            object-fit: cover;
+        }
+    </style>
+
+    <style>
+        .social-row{
+            display: flex;    
+            flex-direction: row;
+            flex-wrap: wrap;     
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-icon{
+            width: 72px;          
+            height: 72px;
+            object-fit: contain; 
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!-- FLEX -->
+            <div class="title">
+                
+                <h1 class="title_header">
+                    <img src="img/pixel_title_martin_stubna.gif" alt="Personal Page of Martin Stubna" class="title_gif">
+                </h1>
+                <img src="img/dobra_fotka_windburger_no_background.png" alt="This is me 2" class = "title_photo">
+            </div>
+
+            <!-- FLEX -->
+            <nav>
+                <a href="#about"><strong>About Me</strong></a>
+                <a href="#blog"><strong>Blog</strong></a>
+                <a href="#photos"><strong>Photos</strong></a>
+                <a href="#contact"><strong>Contact</strong></a>
+            </nav>
+        </header>
+
+
+
+        <main>
+            <!-- STACK -->
+            <section id="about">
+                <h2><strong>About me</strong></h2>
+                <p> Hi! My name is Martin Stubna and this is my personal website. I am a 23 year old computer science student at the Technical University of Berlin.
+                    I was born in Slovakia but now i reside in Berlin, Germany. I have a pet cornsnake named Pinky. I love playing floorball, skiing, reading, movies and so on :D.
+                    I also love watching ice hockey, with my favourite team being HK Spisska Nova Ves, my hometown. I made this website as a way 
+                    because i wanted to learn some HTML and also because i found it fun. I want to use it for many fun side-projects of mine i always wanted to do.
+                    In the future i might upload some pictures i find nice and i also plan to use it as a personal blog from
+                    time to time. Anyways, take a look around and write me a message on any of the platforms in the contacts area.
+                </p>
+                <br><br>
+                <h3><strong>What you can find here</strong></h3>
+                <p> On my website i currently have some photos and a link to a blog page which is however currently not yet implemented. 
+                    Also in the contacts you can find almost all the platforms i have, however currently i dont yet have a LinkedIn and 
+                    Reddit and i also don`t have anything on my GitHub as i use my university intern GitLab for most things currently. 
+                    These will be added when i create them. You can also copy my email adress by clicking on the icon.
+                </p>
+                <br><br>
+            </section>
+
+
+            <!-- STACK -->
+            <section id="blog">
+                <h2>Blog</h2>
+                <div class="link-box"><p><a href="blog.html">Click here to access my blog</a></p></div>
+            </section>
+
+
+            <!-- GRID -->
+            <section id="photos">
+                <h2>Photos</h2>
+                <div class="photo-grid">
+                    <img src="img/maturitna_fotka.jpg" alt="This is me" class = "images">
+                    <img src="img/floorball1.png" alt="Playing Floorball" class = "images">
+                    <img src="img/floorball2.png" alt="Playing Floorball" class = "images">
+                    <img src="img/lyze1.jpeg" alt="Skiing" class = "images">
+                    <img src="img/lyze2.jpeg" alt="Skiing" class = "images">
+                    <img src="img/Run.jpeg" alt="Obstacle City Run 2025" class = "images">
+                    <img src="img/hokej.jpeg" alt="HK SNV Archambault" class = "images">
+                    <img src="img/Pinky.jpeg" alt="Pinky" class = "images">
+                </div>
+            </section>
+        </main>
+
+
+        <!-- FLEX -->
+        <section id="contact">
+            <h2 class="centered">Contact Information</h2>
+            <div class="social-row">
+                <a href="https://www.instagram.com/martinstubna/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="img/icons8-instagram-50.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/martin.stubna1/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="img/icons8-facebook-50.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@Martin-ib3rj" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                    <img src="img/icons8-youtube-50.png" alt="Youtube" class="social-icon">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+                    <img src="img/icons8-reddit-50.png" alt="Reddit" class="social-icon"> 
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="img/icons8-linkedin-50.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/Martin-SNV" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="img/icons8-github-50.png" alt="GitHub" class="social-icon">
+                </a>
+                <img src="img/icons8-gmail-50.png" alt="Email" id="Mail" class="social-icon">
+            </div>
+            <script>
+                document.getElementById("Mail").onclick = () =>
+                navigator.clipboard.writeText("martinstubnaofficial@gmail.com");
+            </script>
+        </section>
+    </div>
+</body>
+
+
+
+
+</html>
