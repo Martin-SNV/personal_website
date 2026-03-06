@@ -1,0 +1,3 @@
+Implement languages - Slovak, German
+Add a small game
+Adjust some design decisions

@@ -2,19 +2,88 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap">
-    	<title>Martin Stubna Blog</title>
-	<style>	
-		html {font-family: "Silkscreen", sans-serif; scroll-behavior: smooth;}
-		body {margin: 0; min-height: 100vh; background: linear-gradient(to bottom, #0a0e0a 0%, #0a0e0a 25%,#063b18 55%, #0b7a2a 100%);}
-		h1   {color: #28c85a;}
+    <link rel="stylesheet" href="style.css">
+	<title>Martin Stubna Blog</title>
+	<style>
+		.read-more-button{
+			display: inline-block;
+			padding: 8px 10px;
+			border: 2px solid #ffffff;
+			border-radius: 10px;
+			background: rgba(202, 198, 198, 0.6);
+			box-shadow: 0 0 12px rgba(40, 200, 90, 0.25);
+		}
 	</style>
 </head>
 
 <body>
-<h1 class="title">
-This Part is still under Construction.
-</h1>
+    <div class="container">
+		<header>
+			<div class="title">
+				<h1 class="title_header">
+					<img src="img/a-corner-of-my-mind.gif" alt="Blog of Martin Stubna" class="title_gif">				
+				</h1>
+			</div>
+		</header>
 
+		<nav>
+            <a href="#newest"><strong>Newest Post</strong></a>
+            <a href="#list"><strong>All Posts</strong></a>
+            <a href="Blogposts/Archive.html"><strong>Archived Posts</strong></a>
+            <a href="#contact"><strong>Contact</strong></a>
+        </nav>
+
+		<section id="newest">
+			<div class="link-box">
+				<article>
+					<h2>Finally Beginning <p> 06.03.2026</p></h2>
+					<p>
+						Finally! After putting off making this update to my website, today I sat down and decided to just do it.
+ 						I had been thinking about it a lot over the past couple of weeks, but I had exams, presentations, and so on.
+ 						It gave me time to think of so many ideas I want to implement here. So many, in fact, that I didn’t know where to start.
+  						But yesterday I wrote my last exam, and so here we are! This is my first post on my now-working blog.					
+					</p>
+					<p class="read-more-button"><a href="Blogposts/Fist_post.html" style="font-size: 18px;"> Read more</a></p>
+				</article>
+			</div>
+		</section>
+
+		<section id="list">
+			<div class="link-box">
+				<h2>All Posts</h2>
+				<p><a href="Blogposts/Fist_post.html" style="font-size: 18px;"> Finally Beginning 				06.03.2026</a></p>
+			</div>
+		</section>
+
+		<section id="contact">
+            <h2 class="centered">Contact Information</h2>
+            <div class="social-row">
+                <a href="https://www.instagram.com/martinstubna/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="img/icons8-instagram-50.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/martin.stubna1/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <img src="img/icons8-facebook-50.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@Martin-ib3rj" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                    <img src="img/icons8-youtube-50.png" alt="Youtube" class="social-icon">
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+                    <img src="img/icons8-reddit-50.png" alt="Reddit" class="social-icon"> 
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="img/icons8-linkedin-50.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://github.com/Martin-SNV" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="img/icons8-github-50.png" alt="GitHub" class="social-icon">
+                </a>
+                <img src="img/icons8-gmail-50.png" alt="Email" id="Mail" class="social-icon">
+            </div>
+            <script>
+                document.getElementById("Mail").onclick = () =>
+                navigator.clipboard.writeText("martinstubnaofficial@gmail.com");
+            </script>
+        </section>
+	</div>
 </body>
 
 
