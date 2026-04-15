@@ -124,6 +124,25 @@ nav {
     object-fit: cover;
 }
 
+.blog-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    align-items: center;
+    gap: 30px;
+}
+
+.blog-images-wide{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.blog-images-tall{
+    width: 75%;
+    height: 450px;
+    object-fit: cover;
+}
+
+
 .social-row {
     display: flex;
     flex-direction: row;
